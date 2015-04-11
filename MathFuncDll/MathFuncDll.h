@@ -9,7 +9,7 @@
 namespace MathFuncs
 {
 	// This class is exported from the MathFuncsDll.dll
-	ref class MyMathFuncs
+	class MyMathFuncs
 	{
 	public:
 		// Returns a + b
