@@ -1,7 +1,5 @@
-﻿using System.Text.RegularExpressions;
-using System.Windows;
+﻿using System.Windows;
 using System.Windows.Controls;
-using System.Linq;
 
 namespace WrapConsumer
 {
@@ -18,11 +16,13 @@ namespace WrapConsumer
             // Setup controller before we initialize the UI
             controller = new MainWindowController(this);
 
+            // Model is an IPropertyChangeNotifier which the controller handles.
             DataContext = controller.Model;
 
             InitializeComponent();
-        }     
+        }
 
+        #region Boring Focus Change Event Stuff
         /// <summary>
         /// Highlight all text when we tab into textbox
         /// </summary>
@@ -52,5 +52,6 @@ namespace WrapConsumer
             if(control is TextBox)
                 (control as TextBox).SelectAll();
         }      
+        #endregion
     }
 }

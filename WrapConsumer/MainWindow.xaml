@@ -29,7 +29,7 @@
             <Image Grid.ColumnSpan="2" Grid.RowSpan="2" Source="Resources/plus.png" Opacity="0.2" />
             <TextBox x:Name="plus_a" TextWrapping="Wrap" Text="{Binding Plus_A}" Width="100" Grid.ColumnSpan="1" VerticalAlignment="Center" VerticalContentAlignment="Center" GotKeyboardFocus="textFocus_Event" GotMouseCapture="textFocus_Event"/>
             <TextBox x:Name="plus_b" TextWrapping="Wrap" Text="{Binding Plus_B}" Width="100" Grid.Column="1" VerticalAlignment="Center" VerticalContentAlignment="Center" GotKeyboardFocus="textFocus_Event" GotMouseCapture="textFocus_Event"/>
-            <Label x:Name="plus_result" Content="" HorizontalAlignment="Center"  Grid.Row="1" VerticalAlignment="Center" 
+            <Label x:Name="plus_result" Content="{Binding Plus_Result}" HorizontalAlignment="Center"  Grid.Row="1" VerticalAlignment="Center" 
                    Grid.ColumnSpan="2" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
 
         </Grid>
@@ -51,7 +51,7 @@
             <Image Grid.ColumnSpan="2" Grid.RowSpan="2" Source="Resources/minus.png" Opacity="0.2" />
             <TextBox x:Name="minus_a" TextWrapping="Wrap" Text="{Binding Minus_A}" Width="100" Grid.ColumnSpan="1" VerticalAlignment="Center" VerticalContentAlignment="Center"  GotKeyboardFocus="textFocus_Event" GotMouseCapture="textFocus_Event"/>
             <TextBox x:Name="minus_b" TextWrapping="Wrap" Text="{Binding Minus_B}" Width="100" Grid.Column="1" VerticalAlignment="Center" VerticalContentAlignment="Center" GotKeyboardFocus="textFocus_Event" GotMouseCapture="textFocus_Event"/>
-            <Label x:Name="minus_result" Content="" HorizontalAlignment="Center"  Grid.Row="1" VerticalAlignment="Center" Grid.ColumnSpan="2" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
+            <Label x:Name="minus_result" Content="{Binding Minus_Result}" HorizontalAlignment="Center"  Grid.Row="1" VerticalAlignment="Center" Grid.ColumnSpan="2" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
 
         </Grid>
         <Grid Grid.Column="0" Grid.Row="1" >
@@ -72,7 +72,7 @@
             <Image Grid.ColumnSpan="2" Grid.RowSpan="2" Source="Resources/multiply.png" Opacity="0.2" />
             <TextBox x:Name="multiply_a" TextWrapping="Wrap" Text="{Binding Multiply_A}" Width="100" Grid.ColumnSpan="1" VerticalAlignment="Center" VerticalContentAlignment="Center" GotKeyboardFocus="textFocus_Event" GotMouseCapture="textFocus_Event"/>
             <TextBox x:Name="multiply_b" TextWrapping="Wrap" Text="{Binding Multiply_B}" Width="100" Grid.Column="1" VerticalAlignment="Center" VerticalContentAlignment="Center" GotKeyboardFocus="textFocus_Event" GotMouseCapture="textFocus_Event"/>
-            <Label x:Name="multiply_result" Content="" HorizontalAlignment="Center"  Grid.Row="1" VerticalAlignment="Center" Grid.ColumnSpan="2" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
+            <Label x:Name="multiply_result" Content="{Binding Multiply_Result}" HorizontalAlignment="Center"  Grid.Row="1" VerticalAlignment="Center" Grid.ColumnSpan="2" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
 
         </Grid>
         <Grid Grid.Column="1" Grid.Row="1" >
@@ -93,9 +93,7 @@
             <Image Grid.ColumnSpan="2" Grid.RowSpan="2" Source="Resources/divide.png" Opacity="0.2" />
             <TextBox x:Name="divide_a" TextWrapping="Wrap" Text="{Binding Divide_A}" Width="100" Grid.ColumnSpan="1" VerticalAlignment="Center" VerticalContentAlignment="Center" GotKeyboardFocus="textFocus_Event" GotMouseCapture="textFocus_Event"/>
             <TextBox x:Name="divide_b" TextWrapping="Wrap" Text="{Binding Divide_B}" Width="100" Grid.Column="1" VerticalAlignment="Center" VerticalContentAlignment="Center" GotKeyboardFocus="textFocus_Event" GotMouseCapture="textFocus_Event"/>
-            <Label x:Name="divide_result" Content="" HorizontalAlignment="Center"  Grid.Row="1" VerticalAlignment="Center" Grid.ColumnSpan="2" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
-
+            <Label x:Name="divide_result" Content="{Binding Divide_Result}" HorizontalAlignment="Center"  Grid.Row="1" VerticalAlignment="Center" Grid.ColumnSpan="2" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
         </Grid>
-
     </Grid>
 </Window>
