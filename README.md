@@ -6,3 +6,7 @@ This example was written in Visual Studio 2013 using C# .NET 4.5 , C++/CLR, and 
 For simplicity, the MathFunc dll is taken from the [official Microsoft dll walkthrough](https://msdn.microsoft.com/en-us/library/ms235636.aspx).
 
 The CLR wrapper and C# code was developed by me to learn and share how to achieve interoperation between native libraries and C# .NET without the use of P/invoke.
+
+### Important Note:
+
+The C# executable requires the MathFuncDll to be in working directory. A post-build event was added to automatically copy the dll into the output directory to avoid the FileNotFound issue.
